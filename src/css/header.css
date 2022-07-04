@@ -1,0 +1,213 @@
+.header {
+
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	padding: 24px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+
+	&__logo {
+
+		flex-shrink: 0;
+
+		svg {
+
+			fill: var(--blue);
+
+			path + path {
+
+				opacity: .5;
+				fill: var(--color);
+
+			}
+
+		}
+
+	}
+
+	&__onboarding {
+
+		display: flex;
+		justify-content: center;
+		flex-grow: 1;
+
+	}
+
+	&__right {
+
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+
+		hr {
+
+			opacity: .2;
+			width: 1px;
+			height: 20px;
+			margin: 0 20px;
+
+		}
+
+		@media $smWidth {
+
+
+		}
+
+	}
+
+	&__social {
+
+	}
+
+	&__phone {
+
+		font-weight: 500;
+		font-size: 20px;
+
+	}
+
+}
+/*
+.btn-menu {
+
+	width: 60px;
+	height: 60px;
+	border-right: 1px solid #cfcfcf;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	svg {
+
+		stroke: var(--color);
+		fill: none;
+
+	}
+
+}
+ */
+@media $smWidth {
+/*
+	.btn-menu {
+
+		display: flex;
+
+	}
+
+	.menu-show {
+
+		.main,
+		.footer {
+
+			display: none;
+
+		}
+
+		.header {
+
+			flex-grow: 1;
+			display: flex;
+			border-bottom: 0;
+			padding-bottom: 20px;
+
+			.center {
+
+				flex-grow: 1;
+				display: flex;
+				padding: 0;
+
+			}
+
+			&__flex {
+
+				flex-grow: 1;
+				flex-direction: column;
+
+			}
+
+			&__right {
+
+				display: flex;
+
+			}
+
+			&__menu {
+
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+			}
+
+		}
+
+	}
+*/
+}
+
+.lang {
+
+	&__current {
+
+		display: flex;
+		align-items: center;
+		font-size: 15px;
+		line-height: 22px;
+		color: #818181;
+
+	}
+
+	&__flag {
+
+		border-radius: 50%;
+		margin-right: 10px;
+
+	}
+
+	&__arrow {
+
+		fill: #818181;
+		margin-left: 10px;
+
+	}
+
+}
+
+.onboarding {
+
+	display: flex;
+	align-items: center;
+
+	&__link {
+
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 22px;
+		padding: 4px 12px;
+		background-color: var(--color);
+		border-radius: 15px;
+		color: #fff;
+
+	}
+
+	svg {
+
+		opacity: .5;
+		margin: 0 10px;
+
+	}
+
+	&__text {
+
+		font-size: 13px;
+		line-height: 14px;
+		opacity: .5;
+		max-width: 64px;
+
+	}
+
+}

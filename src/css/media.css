@@ -1,0 +1,47 @@
+.visible-md,
+.visible-sm {
+
+	display: none;
+
+}
+
+@media $desktop {
+
+}
+
+@media $mdWidth {
+
+	.hidden-md {
+
+		display: none !important;
+
+	}
+
+	.visible-md {
+
+		display: block;
+
+	}
+
+}
+
+@media $smWidth {
+
+	.hidden-sm {
+
+		display: none !important;
+
+	}
+
+	.visible-sm {
+
+		display: block;
+
+	}
+
+}
+
+@media $xsWidth {
+
+
+}

@@ -1,0 +1,15 @@
+:root {
+
+	--color: #010101;
+	--blue: #017aff;
+	--bg: #fff;
+	--border: rgba(210, 210, 210, 0.4);
+
+	--transitionDefault: 0s;
+
+}
+
+$desktop: (min-width: 1200px);
+$mdWidth: (max-width: 1199px);
+$smWidth: (max-width: 767px);
+$xsWidth: (max-width: 359px);
