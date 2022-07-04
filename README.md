@@ -1,5 +1,5 @@
-# migom.ae
-[build](https://migom.vitaliitin.site/)
+# 2Global
+[build](https://2global.vitaliitin.site/)
 
 ## support browsers:
 **Android >= 5**
