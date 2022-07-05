@@ -45,52 +45,48 @@
 	{
 		name : "One-window service",
 		text : "Get the information on all jurisdictions and processes in&nbsp;one&nbsp;window",
-		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path fill="#8D7DFB" stroke="#fff" d="M11.7 28.1h7.9L11 36.7l1.93 1.94 8.6-8.6v7.9h2.74V25.38H11.7v2.73Zm26.94-15.17L36.7 11l-8.6 8.6v-7.9h-2.73v12.58h12.57v-2.74h-7.91l8.6-8.6Z"/></svg>'
+		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path d="M11.7 28.1h7.9L11 36.7l1.93 1.94 8.6-8.6v7.9h2.74V25.38H11.7v2.73Zm26.94-15.17L36.7 11l-8.6 8.6v-7.9h-2.73v12.58h12.57v-2.74h-7.91l8.6-8.6Z"/></svg>'
 	},
 
 	{
 		name : "Online timeline and ETA",
 		text : "(Estimated time of incorporation or other services)",
-		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path fill="#F9884C" stroke="#fff" stroke-width=".5" d="M25 36.2a11.2 11.2 0 1 0 0-22.4 11.2 11.2 0 0 0 0 22.4Zm0 2.8a14 14 0 1 1 0-28 14 14 0 0 1 0 28Zm0-11.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>'
+		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path stroke-width=".5" d="M25 36.2a11.2 11.2 0 1 0 0-22.4 11.2 11.2 0 0 0 0 22.4Zm0 2.8a14 14 0 1 1 0-28 14 14 0 0 1 0 28Zm0-11.2a2.8 2.8 0 1 1 0-5.6 2.8 2.8 0 0 1 0 5.6Z"/></svg>'
 	},
 
 	{
 		name : "Online documents uploading",
 		text : "All the process is structured in a few easy steps",
-		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path fill="#FA6069" stroke="#fff" stroke-width=".5" d="M16.15 28.26h2.54V20.6c2.03 1.96 1.42 1.49 3.31 3.48l1.84-1.75-6.42-6.75L11 22.32l1.84 1.75c2.37-2.5 2.3-2.2 3.31-3.48v7.67Zm18.28.51v-2.54h-7.62v7.62h2.54v-5.08h5.08ZM16.15 11v2.54h20.31V29l-6.84 6.87H18.7v-5.59h-2.54v8.13h14.53L39 30.06V11H16.15Z"/></svg>'
+		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path stroke-width=".5" d="M16.15 28.26h2.54V20.6c2.03 1.96 1.42 1.49 3.31 3.48l1.84-1.75-6.42-6.75L11 22.32l1.84 1.75c2.37-2.5 2.3-2.2 3.31-3.48v7.67Zm18.28.51v-2.54h-7.62v7.62h2.54v-5.08h5.08ZM16.15 11v2.54h20.31V29l-6.84 6.87H18.7v-5.59h-2.54v8.13h14.53L39 30.06V11H16.15Z"/></svg>'
 	},
 
 	{
 		name : "Friendly General support and Premium support",
 		text : "24/7 for experienced customers",
-		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path fill="#017AFF" stroke="#fff" stroke-width=".5" d="M18.4 37.35 11 39l1.65-7.4a14 14 0 1 1 5.76 5.76Zm.41-2.95.92.49a11.14 11.14 0 0 0 11.5-.58 11.2 11.2 0 1 0-16.11-4.04l.48.92-.91 4.12 4.12-.91ZM18 25h2.8a4.2 4.2 0 1 0 8.4 0H32a7 7 0 1 1-14 0Z"/></svg>'
+		ico  : '<svg width="50" height="50" viewBox="0 0 50 50"><path stroke-width=".5" d="M18.4 37.35 11 39l1.65-7.4a14 14 0 1 1 5.76 5.76Zm.41-2.95.92.49a11.14 11.14 0 0 0 11.5-.58 11.2 11.2 0 1 0-16.11-4.04l.48.92-.91 4.12 4.12-.91ZM18 25h2.8a4.2 4.2 0 1 0 8.4 0H32a7 7 0 1 1-14 0Z"/></svg>'
 	}
 
 ] %}
 
 			<li class="we-offer__cards-item">
 
-				<a href="/" class="we-offer__cards-link">
+				<span class="we-offer__cards-ico">
 
-					<span class="we-offer__cards-ico">
+					{{ item.ico | safe }}
 
-						{{ item.ico | safe }}
+				</span>
 
-					</span>
+				<h3 class="we-offer__cards-name">
 
-					<h3 class="we-offer__cards-name">
+					{{ item.name }}
 
-						{{ item.name }}
+				</h3>
 
-					</h3>
+				<p class="we-offer__cards-text">
 
-					<p class="we-offer__cards-text">
+					{{ item.text | safe }}
 
-						{{ item.text }}
-
-					</p>
-
-				</a>
+				</p>
 
 			</li>
 
