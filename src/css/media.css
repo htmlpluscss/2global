@@ -5,6 +5,13 @@
 
 }
 
+.center {
+
+	width: 1080px;
+	margin: 0 auto;
+
+}
+
 @media $desktop {
 
 }
@@ -23,6 +30,12 @@
 
 	}
 
+	.center {
+
+		width: 720px;
+
+	}
+
 }
 
 @media $smWidth {
@@ -36,6 +49,14 @@
 	.visible-sm {
 
 		display: block;
+
+	}
+
+	.center {
+
+		width: 400px;
+		max-width: 100%;
+		padding: 0 20px;
 
 	}
 

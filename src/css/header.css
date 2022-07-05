@@ -151,13 +151,87 @@
 
 .lang {
 
-	&__current {
+	position: relative;
+	--color: #818181;
+
+	&__list {
+
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		z-index: 1;
+		padding: 24px;
+		background-color: #fff;
+		box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
+		border-radius: 12px;
+
+		opacity: 0;
+		pointer-events: none;
+		transform: translate3d(-50%, 0, 0);
+		transition: opacity 0.3s 0s, transform 0.3s 0s;
+
+	}
+
+	@media $desktop {
+
+		&__list:hover,
+		&__current:hover + &__list {
+
+			opacity: 1;
+			pointer-events: auto;
+			transform: translate3d(-50%, 12px, 0);
+
+			&::before {
+
+				position: absolute;
+				top: -24px;
+				left: 0;
+				right: 0;
+				height: 36px;
+				content: '';
+
+			}
+
+		}
+
+	}
+
+	@media $mdWidth {
+
+		&.is-open &__list {
+
+			opacity: 1;
+			pointer-events: auto;
+			transform: translate3d(-50%, 12px, 0);
+
+		}
+
+	}
+
+	&__item {
 
 		display: flex;
 		align-items: center;
 		font-size: 15px;
+		white-space: nowrap;
 		line-height: 22px;
-		color: #818181;
+		color: var(--color);
+
+		& + & {
+
+			margin-top: 12px;
+
+		}
+
+		@media $desktop {
+
+			&:hover {
+
+				--color: var(--color);
+
+			}
+
+		}
 
 	}
 
@@ -170,7 +244,7 @@
 
 	&__arrow {
 
-		fill: #818181;
+		fill: var(--color);
 		margin-left: 10px;
 
 	}
@@ -206,7 +280,6 @@
 		font-size: 13px;
 		line-height: 14px;
 		opacity: .5;
-		max-width: 64px;
 
 	}
 

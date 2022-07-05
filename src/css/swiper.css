@@ -16,6 +16,13 @@
 
 }
 
+.swiper-container {
+
+	overflow: hidden;
+	position: relative;
+
+}
+
 .swiper-wrapper {
 
 	position: relative;
@@ -44,29 +51,33 @@
 
 .swiper-counter {
 
-	font-size: 20px;
+	font-size: 17px;
 	display: flex;
-	color: #b9b9b9;
 	white-space: nowrap;
-	min-width: 68px;
-	justify-content: space-between;
 
 	@media $smWidth {
 
-		justify-content: center;
-		font-size: 12px;
-		line-height: 20px;
 
 	}
 
 	&__index {
 
-		display: flex;
 		color: var(--color);
+		margin-left: 12px;
+
+	}
+
+	&__total {
+
+		display: flex;
+		margin-right: 12px;
+		color: #78787a;
 
 		&::before {
 
-			content: '0';
+			content: '/';
+			margin: 0 4px;
+			color: #d9d8dc;
 
 		}
 
@@ -74,32 +85,6 @@
 
 }
 
-.swiper-progress {
-
-	height: 3px;
-	position: relative;
-	flex-grow: 1;
-	margin: 0 16px;
-	background-color: #c8c8c8;
-
-	@media $smWidth {
-
-		display: none;
-
-	}
-
-	span {
-
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		background-color: var(--blue);
-		transition-timing-function: linear;
-
-	}
-
-}
 
 .swiper-navigation {
 
@@ -122,8 +107,8 @@
 
 		width: 40px;
 		height: 40px;
-		border-radius: 50px;
-		border: 1px solid #c3c3c3;
+		border-radius: 8px;
+		background-color: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -138,13 +123,7 @@
 
 			&:hover {
 
-				border-color: #dcdcdc;
-
-				svg {
-
-					fill: #737373;
-
-				}
+				opacity: .5;
 
 			}
 

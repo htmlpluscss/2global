@@ -1,5 +1,14 @@
 .slider {
 
+	width: 595px;
+
+	&__nav {
+
+		display: flex;
+		align-items: center;
+
+	}
+
 	&__list {
 
 		display: flex;
@@ -17,6 +26,74 @@
 		@media $smWidth {
 
 			display: block;
+
+		}
+
+	}
+
+	&__text {
+
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 60px;
+
+		&-check {
+
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 5px 15px 5px 0;
+			border-radius: 50%;
+			background-color: #eeedf3;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			svg {
+
+				fill: var(--blue);
+				stroke: var(--blue);
+
+			}
+
+		}
+
+		&-selected {
+
+			display: inline-block;
+			padding: 2px 20px 4px;
+			background-color: #eeedf3;
+			border-radius: 30px;
+			color: var(--blue);
+
+		}
+
+	}
+
+	&__flags {
+
+		margin: 36px 0 15px;
+
+		&-text {
+
+			display: flex;
+			font-size: 17px;
+			line-height: 30px;
+
+			li {
+
+				display: flex;
+
+				& + li::before {
+
+					font-size: 11px;
+					content: '•';
+					opacity: 0.3;
+					margin: 0 7px;
+
+				}
+
+			}
 
 		}
 

@@ -9,8 +9,11 @@
 
 		new Swiper(swipe, {
 			loop: true,
-			speed: 500,
-			pagination: {
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+  			pagination: {
 				el: swipeNav,
 				clickable: true,
 				bulletClass: 'button',

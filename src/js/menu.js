@@ -1,5 +1,7 @@
 ( btn => {
 
+	return;
+
 	let windowScroll = window.pageYOffset;
 
 	const path = btn.querySelectorAll('path');

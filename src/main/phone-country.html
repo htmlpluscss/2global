@@ -1,0 +1,23 @@
+					<div class="phone-country">
+
+						<input class="phone-country__code" type="hidden" name="country" value="ae">
+
+						<input class="phone-country__mask input inputmask inputmask--phone" type="tel" name="phone" data-mask="+3\9 999 9999999" placeholder="+39 000 0000000" required="required">
+
+						<button class="phone-country__toggle button" type="button">
+
+							<span class="phone-country__toggle-flag">
+
+								<img src="/img/flags/af.svg" width="16" height="12" loading="lazy" alt="Afghanistan (افغانستان)">
+
+							</span>
+
+							<svg class="phone-country__toggle-arrow" width="12" height="24" viewBox="0 0 12 24">
+								<path d="m6.25 14-4-4h8l-4 4Z"/>
+							</svg>
+
+						</button>
+
+{% include "main/phone-country__list.html" %}
+
+					</div>
